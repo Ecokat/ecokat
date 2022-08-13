@@ -1,0 +1,133 @@
+:root {
+    --blue-h :rgb(63, 190, 248);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    user-select: none;
+}
+.feedback-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--blue-h); */
+    width: 100%; min-height: 100vh;
+}
+.feedback-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+}
+.feedback-mid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.feedback-head, .feedback-mid, .feedback-textarea, .feedback-end{
+    padding: 15px;
+}
+.feedback-media img{
+    height: 50px; width: 50px;
+    cursor: pointer;
+    background-color: rgb(63, 190, 248, 0.507);
+    border-radius: 50%;
+    transition: 0.1s linear;
+}
+.feedback-media img:hover{
+    background-color: var(--blue-h);
+    transform: scale(1.2);
+}
+.feedback-media .active{
+  background-color: var(--blue-h);
+    transform: scale(1.2);
+}
+.feedback-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback-heading{
+    width: 70%;
+}
+.feedback-heading h1{
+    font-size: 25px;
+    border-bottom: 8px solid var(--blue-h);
+    font-weight: bolder;
+}
+.feedback-close{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.1s linear;
+    padding: 0 10px;
+}
+.feedback-close:hover{
+    transform: scale(1.2);
+}
+.s{
+    width: 1.5px; height: 20px;
+    background-color: black;
+    border-radius: 100px;
+}
+.s1{
+    transform: translateX(1.5px) rotate(45deg);
+}
+.s2{
+    transform: rotate(-45deg);
+}
+.feedback-textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.feedback-textarea p{
+    font-size: 18px;
+}
+textarea{
+    outline: none;
+    resize: none;
+    height: 100px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.feedback-end{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: middle;
+}
+.feedback-end .btn{
+    width: 150px;
+    height: 55px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 15px;
+}
+.feedback-end .sub{
+    background: var(--blue-h);
+    border: 1px solid transparent;
+    transition: 0.1s linear;
+}
+.feedback-end .skp{
+    transition: 0.1s linear;
+    border: 1px solid black;
+}
+.feedback-end .skp:hover{
+    background-color: black;
+    color: white;
+}
+.feedback-end .sub:hover{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
